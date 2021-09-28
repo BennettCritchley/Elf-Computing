@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
-// import slugify from "slugify";
 import "./App.css";
 import Header from "./Header/Header.js";
 import CustomizeLaptop from "./Customize_Laptop/Customize_Laptop.js";
 import Cart from "./Cart/Cart.js";
+
 
 class App extends Component {
   state = {
@@ -47,7 +47,7 @@ class App extends Component {
             selected={this.state.selected}
             updateFeature={this.updateFeature}
           />
-          <Cart selected={this.state.selected} />
+          <Cart selected={this.props.selected} />
         </main>
       </div>
     );
