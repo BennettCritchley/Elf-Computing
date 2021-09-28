@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
+import FEATURES from "../FEATURES.js";
 import "./App.css";
 import Header from "./Header/Header.js";
 import CustomizeLaptop from "./Customize_Laptop/Customize_Laptop.js";
@@ -44,7 +45,7 @@ class App extends Component {
         <Header />
         <main>
           <CustomizeLaptop
-            features={this.props.features}
+            features={FEATURES}
             selected={this.state.selected}
             updateFeature={this.updateFeature}
           />
