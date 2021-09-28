@@ -29,8 +29,7 @@ class Features extends Component {
           </div>
         );
       });
-    });
-    return (
+      return (
         <fieldset className="feature" key={featureHash}>
           <legend className="feature__name">
             <h3>{feature}</h3>
@@ -38,6 +37,12 @@ class Features extends Component {
           {options}
         </fieldset>
       );
+    });
+    return (
+      <>
+        {features}
+      </>
+    )
   }
 }
 

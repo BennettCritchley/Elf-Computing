@@ -3,14 +3,13 @@ import Features from "../Features/Features.js"
 
 class CustomizeLaptop extends Component {
   render() {
-    
     return (
       <form className="main__form">
         <h2>Customize your laptop</h2>
-        <Features 
+        <Features
           features={this.props.features}
           selected={this.props.selected}
-          updateFeature={this.updateFeature}
+          updateFeature={this.props.updateFeature}
         />
       </form>
     );
