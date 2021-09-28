@@ -16,7 +16,9 @@ class Cart extends Component {
         <h2>Your cart</h2>
           <Summary selected={this.props.selected}/>
         <div className="Summary__total">
-          <div className="Summary__total__label">Total</div>
+          <div className="Summary__total__label">
+            Total
+          </div>
           <div className="Summary__total__value">
             {USCurrencyFormat.format(total)}
           </div>
